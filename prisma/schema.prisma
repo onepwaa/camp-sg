@@ -1,0 +1,82 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Team {
+  id           String        @id @unique @default(cuid())
+  Participants Participant[]
+  Name         String
+  Present      Boolean
+  Debate       Debate[]
+  BowlScore    BowlScore[]
+}
+
+model Participant {
+  id             String           @id @unique @default(cuid())
+  Email          String           
+  Name           String
+  Team           Team?            @relation(fields: [teamId], references: [id])
+  teamId         String?
+  Debate         Debate[]
+  DebateScore    DebateScore[]
+  ChallengeScore ChallengeScore[]
+  WritingScore   WritingScore[]
+}
+
+model Debate {
+  id            String        @id @unique @default(cuid())
+  Proposition   Team          @relation(fields: [teamId], references: [id])
+  Opposition    Participant   @relation(fields: [participantId], references: [id])
+  Carried       Boolean
+  teamId        String
+  participantId String
+  DebateScore   DebateScore[]
+}
+
+model DebateScore {
+  id            String      @id @unique @default(cuid())
+  Debate        Debate      @relation(fields: [debateId], references: [id])
+  Participant   Participant @relation(fields: [participantId], references: [id])
+  Score         Int
+  debateId      String
+  participantId String
+}
+
+model ChallengeQuestion {
+  id      String @id @unique @default(cuid())
+  Text    String
+  Correct String
+  A1      String
+  A2      String
+  A3      String
+  A4      String
+}
+
+model ChallengeScore {
+  id            String      @id @unique @default(cuid())
+  Participant   Participant @relation(fields: [participantId], references: [id])
+  Response      Json?
+  Score         Float
+  participantId String
+}
+
+model WritingScore {
+  id            String      @id @unique @default(cuid())
+  Participant   Participant @relation(fields: [participantId], references: [id])
+  Score         Float
+  Feedback      String
+  FileURL       String
+  participantId String
+}
+
+model BowlScore {
+  id     String @id @unique @default(cuid())
+  Team   Team   @relation(fields: [teamId], references: [id])
+  Score  Int
+  teamId String
+}
