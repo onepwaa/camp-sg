@@ -45,8 +45,7 @@ export default function App({ photos }) {
           color={'white'}
           sx={{ textAlign: 'center', py: 2, fontWeight: 600, fontSize: 2 }}
         >
-          Successfully signed up for Compute Singapore!
-        </Box>
+          Successfully signed up for WSCamp Singapore!
       )}
       <Head>
         <meta
