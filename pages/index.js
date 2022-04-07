@@ -51,24 +51,24 @@ export default function App({ photos }) {
       <Head>
         <meta
           property="og:image"
-          content="https://cloud-nwcftvr2f-hack-club-bot.vercel.app/0screenshot_2022-03-26_at_20.03.39.png"
+          content="/header.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/03819c89-fa70-4b59-8260-4ef11fe2c4e8.png"
+          href="/events/challenge.png"
         />
-        <meta name="msapplication-TileColor" content="#E13940" />
-        <meta name="theme-color" content="#E13940" />
+        <meta name="msapplication-TileColor" content="#4169E1" />
+        <meta name="theme-color" content="#4169E1" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Compute Singapore</title>
+        <title>WSCamp Singapore 2022</title>
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
-        <meta name="description" content="June 2022." />
+        <meta name="description" content="Practice for WSC as it returns to Singapore." />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:title" content="Compute Singapore" />
+        <meta property="og:title" content="WSCamp Singapore 2022" />
       </Head>
       <Box
         sx={{
