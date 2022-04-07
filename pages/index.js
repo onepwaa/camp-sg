@@ -239,13 +239,13 @@ export default function App({ photos }) {
       </Container>
       <br />
       <Box my={3}>
-        <Marquee velocity={25}>
+        <Marquee velocity={20}>
           {photos.slice(0,10).map(photo => (
             <GalleryImage ml={4} mr={0} src={"/penang/" + photo} />
           ))}
         </Marquee>
         <br />
-        <Marquee velocity={25}>
+        <Marquee velocity={20}>
           {photos.slice(10,20).map(photo => (
             <GalleryImage ml={0} mr={4} src={"/penang/" + photo} />
           ))}
