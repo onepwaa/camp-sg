@@ -320,14 +320,8 @@ export default function App({ photos }) {
             action="https://airtable-forms-proxy.innovationcircuit.co/api/app5qjPQUiJlflizH/Registrations?redirect=https://sg-compute.vercel.app/?signedup=true"
           >
             <Input
-              placeholder="Team Name"
-              name="Team Name"
-              required
-              sx={{ border: '1px solid', borderColor: 'sunken', mb: 2 }}
-            />
-            <Input
-              placeholder="Contact Email"
-              name="Contact Email"
+              placeholder="Team Contact Email"
+              name="Team Contact Email"
               required
               type="email"
               sx={{ border: '1px solid', borderColor: 'sunken', mb: 2 }}
