@@ -117,8 +117,8 @@ export default function App({ photos }) {
               Practice for WSC as it returns to Singapore.
             </Heading>
             <Box sx={{ color: 'white', fontSize: 2, my: 3 }}>
-              Date & Time TBC <br />
-              Venue TBC <br />
+              May 21st 2022, 8:30am to 6:30pm.<br />
+              Canadian International School (Lakeside) <br />
             </Box>
             <Flex>
               <Button
@@ -408,13 +408,16 @@ export default function App({ photos }) {
         </Grid>
       </Container>
       <Box bg="blue" sx={{ mt: 5, py: 4, color: 'white', textAlign: 'center' }}>
-        <b>WSCamp Singapore 2022.</b> <br /> Date & Time TBC.
+        <b>WSCamp Singapore 2022.</b> 
+        <br /> 
+          May 21st 2022, 8:30am to 6:30pm ~
+          Canadian International School (Lakeside)
         <br />
         <Link href="mailto:onepwaa@gmail.com" color="white">
           Email Us
         </Link>{' '}
         ~{' '}
-        <Link color="white" target="_blank" href="">
+        <Link color="white" target="_blank" href="https://www.google.com/maps/dir//canadian+international+school/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31da1966d50c3523:0x1b8130f90e3c2790?sa=X&ved=2ahUKEwjjgqi9kMX3AhVzH7cAHYRiCPAQ9Rd6BAgGEAQ">
           Venue Directions
         </Link>
       </Box>
