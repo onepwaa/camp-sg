@@ -317,7 +317,7 @@ export default function App({ photos }) {
             sx={{ maxWidth: '800px' }}
             as="form"
             method="POST"
-            action="https://airtable-forms-proxy.innovationcircuit.co/api/app5sFTDOwHkrGRsd/Registrations?redirect=https://singapore.onepwaa.org/?signedup=true"
+            action="https://airtable-forms-proxy.innovationcircuit.com/api/app5sFTDOwHkrGRsd/Registrations?redirect=https://singapore.onepwaa.org/?signedup=true"
           >
             <Input
               placeholder="Team Contact Email"
