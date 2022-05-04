@@ -407,6 +407,40 @@ export default function App({ photos }) {
             </Box>
           </Box>
         </Grid>
+        <br />
+        <Flex sx={{ flexWrap: 'wrap' }}>
+          <Link href="https://onepwaa.org" target="_blank">
+            <Image
+              src="https://www.onepwaa.org/assets/img/onepwaa-logo-black.png"
+              sx={{
+                background: '#212529',
+                p: '20px',
+                borderRadius: 8,
+                height: '80px',
+                mx: 1,
+                mb: 2,
+                border: '1px solid',
+                borderColor: 'sunken'
+              }}
+            />
+          </Link>
+          <Link href="https://stickermule.com" target="_blank">
+            <Image
+              src="https://cdn.worldvectorlogo.com/logos/sticker-mule.svg"
+              sx={{
+                background: 'white',
+                p: 3,
+                borderRadius: 8,
+                height: '80px',
+                mx: 1,
+                mb: 2,
+                border: '1px solid',
+                borderColor: 'sunken'
+              }}
+            />
+          </Link>
+          
+        </Flex>
       </Container>
       <Box bg="blue" sx={{ mt: 5, py: 4, color: 'white', textAlign: 'center' }}>
         <b>WSCamp Singapore 2022.</b> 
