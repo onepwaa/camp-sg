@@ -117,7 +117,7 @@ export default function App({ photos }) {
               Practice for WSC as it returns to Singapore.
             </Heading>
             <Box sx={{ color: 'white', fontSize: 2, my: 3 }}>
-              May 21st 2022, 8:30am to 6:30pm.<br />
+              May 21st 2022, 8:30am to 6:30pm <br />
               Canadian International School (Lakeside) <br />
             </Box>
             <Flex>
