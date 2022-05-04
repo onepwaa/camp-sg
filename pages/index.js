@@ -310,7 +310,7 @@ export default function App({ photos }) {
           <Box sx={{ maxWidth: '750px', fontSize: 2, color: 'white' }}>
             WSCamp Singapore is free and open to teams of upper primary, secondary,
             and pre-university students (no WSC experience required!). To register a delgation,
-            please <a href="mailto:onepwaa@gmail.com">contact us through email</a>.
+            please <a href="mailto:onepwaa@gmail.com" style={{ color: "white" }}>contact us through email</a>.
           </Box>
           <br />
           <Box
