@@ -394,7 +394,7 @@ export default function App({ photos }) {
             <Heading as="h3">What do I need to bring?</Heading>
             <Box mt={2}>
               We recommend bring a notebook, a couple of pens, a water bottle
-              and a phone or laptop for debate research.
+              and a phone or laptop for research and the bowl.
             </Box>
           </Box>
           <Box sx={{ bg: 'sunken', p: 4, borderRadius: 8 }}>
