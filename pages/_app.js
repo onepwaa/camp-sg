@@ -21,7 +21,7 @@ export default class App extends NextApp {
           colors: { ...theme.colors, modes: {}, red: '#E83D3D', primary: '#E83D3D', purple: '#B815BF', blue: '#4169E1', green: '#0EB5A1' }
         }}
       >
-        <Script data-website-id="63c57443-d016-46ce-807c-e2b59fbfa1ff" src="https://analytics.sampoder.com/umami.js" />
+        <Script data-website-id="a1f8620f-b074-427a-949f-2eca89606c54" src="https://analytics.sampoder.com/umami.js" />
         <Component {...pageProps} />
       </ThemeProvider>
     )
