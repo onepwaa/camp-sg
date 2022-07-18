@@ -1,1 +1,3 @@
-# CodeDay SG Landing Page
+# WSCamp Singapore Landing Page
+
+Built with Next.js.
